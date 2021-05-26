@@ -62,7 +62,8 @@ public class SocketIoProperties {
 
                     // System.in.read();  //分水岭：
 
-                    Socket client = server.accept();  //阻塞的，没有 -1  一直卡着不动  accept(4,
+                    Socket client = server.accept();
+                    //阻塞的，没有 -1  一直卡着不动  accept(4,
                     System.out.println("client port: " + client.getPort());
 
                     client.setKeepAlive(CLI_KEEPALIVE);
